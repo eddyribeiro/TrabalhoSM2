@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.amelotti.trabalhosm.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/toolbar"
+            android:background="#bbbbaa"
+            android:cursorVisible="true"
+            android:focusable="false"
+            android:gravity="center_vertical|center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSoma"
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/resultado"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="120dp"
+            android:clickable="true"
+            android:text="+"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/btnSubtrair"
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:layout_alignTop="@+id/btnSoma"
+            android:layout_toEndOf="@+id/btnSoma"
+            android:clickable="true"
+            android:text="-"
+            android:textSize="40dp"
+            android:layout_marginStart="2dp"/>
+        <Button
+            android:id="@+id/btnDividir"
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:layout_alignTop="@+id/btnSubtrair"
+            android:layout_toEndOf="@+id/btnSubtrair"
+            android:clickable="true"
+            android:text="/"
+            android:textSize="40dp"
+            android:layout_marginStart="2dp"/>
+        <Button
+            android:id="@+id/btnMultiplicar"
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:layout_alignTop="@+id/btnDividir"
+            android:layout_toEndOf="@+id/btnDividir"
+            android:clickable="true"
+            android:text="*"
+            android:textSize="40dp"
+            android:layout_marginStart="2dp"/>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#AAAAAA"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:minHeight="?attr/actionBarSize"
+            android:textAlignment="center"
+            android:theme="?attr/actionBarTheme"
+            app:subtitle="CALCULADORA"
+            app:subtitleTextColor="#000000" />
+
+        <EditText
+            android:id="@+id/editValor"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignStart="@+id/btnSoma"
+            android:layout_below="@+id/resultado"
+            android:layout_marginTop="11dp"
+            android:ems="10"
+            android:hint="1ª Número"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btnSoma"
+            android:layout_below="@+id/btnSoma"
+            android:layout_marginTop="17dp"
+            android:textSize="70dp"
+            android:text="="
+            android:layout_toStartOf="@+id/btnDividir" />
+
+        <Button
+            android:id="@+id/btnVoltarCS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnCalcular"
+            android:layout_alignStart="@+id/btnCalcular"
+            android:layout_below="@+id/btnCalcular"
+            android:layout_marginTop="19dp"
+            android:text="Retornar" />
+
+        <EditText
+            android:id="@+id/editValor2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editValor"
+            android:layout_alignEnd="@+id/btnMultiplicar"
+            android:layout_alignTop="@+id/editValor"
+            android:ems="10"
+            android:hint="2ª Número"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/operacaoTXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/editValor"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="39dp"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/btnCE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnVoltarCS"
+            android:layout_alignEnd="@+id/btnMultiplicar"
+            android:layout_alignTop="@+id/btnCalcular"
+            android:layout_toEndOf="@+id/btnCalcular"
+            android:text="CE"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

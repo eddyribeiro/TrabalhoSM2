@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_collapseParallaxMultiplier="1.0"
+    tools:context="br.com.amelotti.trabalhosm.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/equacao7Txt"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@+id/equacao6Txt"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/equacao6Txt"
+            android:gravity="bottom"
+            android:hint="Equação 7:"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/equacao8Txt"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@+id/equacao7Txt"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/equacao7Txt"
+            android:gravity="bottom"
+            android:hint="Equação 8:"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/equacao6Txt"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@+id/equacao5Txt"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/equacao5Txt"
+            android:gravity="bottom"
+            android:hint="Equação 6:"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/equacao5Txt"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@+id/equacao4Txt"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/equacao4Txt"
+            android:gravity="bottom"
+            android:hint="Equação 5:"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/equacao4Txt"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@+id/equacao3Txt"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/equacao3Txt"
+            android:gravity="bottom|left"
+            android:hint="Equação 4:"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/equacao3Txt"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@+id/equacao2Txt"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/equacao2Txt"
+            android:gravity="bottom|left"
+            android:hint="Equação 3:"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/equacao2Txt"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/equacao1Txt"
+            android:layout_toStartOf="@+id/solucao5Txt"
+            android:gravity="bottom|left"
+            android:hint="Equação 2:"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/equacao1Txt"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@+id/editValorB"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btnGerarEquacoes"
+            android:layout_marginTop="13dp"
+            android:layout_toStartOf="@+id/btnCalcularSG"
+            android:gravity="bottom|left"
+            android:hint="Equação 1:"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imgSG"
+            android:gravity="center"
+            android:text="Digite os Valores Positivos para A ,B e C  "
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgSG"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/calc"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/solucao1Txt" />
+
+        <TextView
+            android:id="@+id/solucao5Txt"
+            android:layout_width="160dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/solucao4Txt"
+            android:layout_below="@+id/equacao4Txt"
+            android:hint="Solução"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/solucao8Txt"
+            android:layout_width="160dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/equacao7Txt"
+            android:layout_toEndOf="@+id/equacao7Txt"
+            android:hint="Solução"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/solucao7Txt"
+            android:layout_width="160dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/equacao6Txt"
+            android:layout_toEndOf="@+id/equacao7Txt"
+            android:hint="Solução"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/solucao6Txt"
+            android:layout_width="160dp"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/equacao6Txt"
+            android:layout_alignBottom="@+id/equacao6Txt"
+            android:layout_toEndOf="@+id/equacao7Txt"
+            android:hint="Solução"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/solucao4Txt"
+            android:layout_width="160dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/solucao3Txt"
+            android:layout_below="@+id/equacao3Txt"
+            android:hint="Solução"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/solucao3Txt"
+            android:layout_width="160dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/equacao2Txt"
+            android:layout_toEndOf="@+id/equacao1Txt"
+            android:hint="Solução:"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/solucao2Txt"
+            android:layout_width="160dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/equacao1Txt"
+            android:layout_toEndOf="@+id/equacao1Txt"
+            android:hint="Solução"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/solucao1Txt"
+            android:layout_width="160dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/equacao1Txt"
+            android:layout_toEndOf="@+id/equacao1Txt"
+            android:hint="Solução"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editValorA"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView4"
+            android:layout_marginStart="84dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="A"
+            android:inputType="none" />
+
+        <EditText
+            android:id="@+id/editValorB"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="B"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editValorC"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_marginStart="36dp"
+            android:layout_toEndOf="@+id/editValorB"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="C"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnCalcularSG"
+            android:layout_width="95dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/btnVoltarSG"
+            android:layout_alignBottom="@+id/btnVoltarSG"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="17dp"
+            android:text="Calcular" />
+
+        <Button
+            android:id="@+id/btnVoltarSG"
+            android:layout_width="95dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:text="Voltar"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/btnGerarEquacoes"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editValorA"
+            android:text="Gerar Equações" />
+
+        <Button
+            android:id="@+id/btnApagarSG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="ZERAR" />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
